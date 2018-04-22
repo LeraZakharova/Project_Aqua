@@ -1,47 +1,63 @@
 <html>
   <head>
     <title>Chicken trade</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="reset" href="./reset.css">
+    <link rel="normalize" href="./normalize.css">
   </head>
-  <body bgcolor=white>
-    <header>
-      <h1>Chicken Trade</h1>
-      <div>
-        <a href="#">+70000000000</a>
-        <br>
-        <a href="#">email@chickentrade.ru</a>
+  <body class="body">
+    <header class="header">
+      <h1 class="title">Chicken Trade</h1>
+      <div class="container">
+        <div class="container_contacts">
+          <div>
+            <a href="#">+70000000000</a>
+          </div>
+          <div>
+          <a href="#">email@chickentrade.ru</a>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section>
-        <div>
-          <ul>
-            <li>
+        <div class="products">
+          <ul class="products_list">
+            <li class="products_list_point">
               <h3>Обслуживание</h3>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <img src="#">
+              <p class="products_list_point_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
             </li>
-            <li>
+            <li class="products_list_point">
               <h3>Оформление</h3>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <img src="#">
+              <p class="products_list_point_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
             </li>
-            <li>
+            <li class="products_list_point">
               <h3>Аквариум под ключ</h3>
-              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <img src="#">
+              <p class="products_list_point_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
             </li>
           </ul>
         </div>
-        <div>
-          <h2>Фотогалерея</h2>
+        <div class="gallery">
+          <h2 class="gallery_name">Фотогалерея</h2>
+          <img src="./image/Pinagor1.jpeg" height="500">
         </div>
         <div>
-          <h2>Online заявка</h2>
-          <form>
-            <input type="Text" placeholder="Ваше Имя">
-            <input type="Text" placeholder="E-mail">
-            <input type="Number" placeholder="Номер телефона">
-            <br>
-            <textarea name="Description" cols="72" rows="10" placeholder="Введите краткое описание заказа (опционально)"></textarea>
-            <br>
-            <button type="submit">Отправить Заявку</button>
+          <h2 class="online_form_name">Подать заявку онлайн</h2>
+          <form class="online_form_form">
+            <div>
+              <input type="Text" placeholder="Ваше Имя">
+              <input type="Text" placeholder="E-mail">
+              <input type="Number" placeholder="Номер телефона">
+            </div>
+            <div>
+              <textarea name="Description" cols="72" rows="6" placeholder="Введите краткое описание заказа (опционально)"></textarea>
+            </div>
+            <div>
+              <button type="submit">Отправить Заявку</button>
+            </div>
           </form>
         </div>
       </section>
