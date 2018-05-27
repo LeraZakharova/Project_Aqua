@@ -163,7 +163,21 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: right;
-	border: solid;
+}
+
+.image{
+	padding: 5px;
+}
+
+
+.image_2_block{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.image_2_block_sweetwater{
+	display: flex;
+	justify-content: flex-start;
 }
 
 .gallery{
@@ -229,30 +243,35 @@
 .class_footer{
 	background-image: url(./image/Background_footer.jpg);
 	background-size: cover;
-	height: 100px;
+	height: 120px;
 }
 
 .container{
 	display: flex;
 	justify-content: center;
 	height: 100%;
+	background: RGB(0, 0, 0, 0.4);
+
 }
 
 .container_contacts{
 	width: 80%;
+	height: 50%;
 	align-self: center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: flex-end;
+	justify-content: space-around;
+	align-items: center;
 	margin: 0;
 }
 
 .container_contacts_link{
-	color: white;
+	color: #F8F6EA;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-variant: all-petite-caps;
 	font-size: 20px;
+	opacity: 1;
 }
