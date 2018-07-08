@@ -6,7 +6,7 @@
 	background-image: url(./image/Background.jpg);
 	height: 450px;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -21,14 +21,14 @@
 }
 
 .title{
-	display: flex;
-	justify-content: left;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-variant: all-petite-caps;
 	font-size: 35px;
 	margin: 0;
+	height: 49px;
+	align-self: center;
 }
 
 .header_navigator{
@@ -36,18 +36,78 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 40%;
+	align-items: center;
+	width: 400px;
 	padding: 0;
 	margin: 0;
+	align-self: center;
+}
+
+.header_navigator > li {
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .header_navigator_link{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.header_navigator_link_aqua{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+}
+
+.header_navigator_aquariums{
+	position: absolute;
+	display: none;
+	width: 130px;
+	height: 110px;
+	top: 100%;
+	left: -20px;
+	padding: 0;
+	list-style: none;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+}
+
+.header_navigator_aquariums > li {
+	display: flex;
+	align-items: center;
+}
+
+.header_navigator_aquariums > li > a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: black;
+	font-variant: all-petite-caps;
+	font-size: 16px;
+	padding: 5px;
+}
+
+.header_navigator_aquariums_point{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: white;
 	font-size: 16px;
 	text-decoration: none;
 }
+
+
+.header_navigator_link_aqua:hover .header_navigator_aquariums{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 .main{
