@@ -137,8 +137,8 @@
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #F8F6EA;
-	width: 32%;
-	height: 350px;
+	width: 30%;
+	height: 250px;
 }
 
 .products_list_point_name{
@@ -154,18 +154,10 @@
 	height: 35px;
 }
 
-.products_list_point_div{
-	display: flex;
-	align-items: center;
-	width: 60%;
-	height: 170px;
-}
-
-
 .products_list_point_text{
+	width: 70%;
 	font-family: 'Rubik', sans-serif;
 	font-style: 16px;
-	text-align: center;
 }
 
 .products_list_point_link{
@@ -248,16 +240,24 @@
 	justify-content: flex-start;
 }
 
-.section_form{
+.gallery{
+	height: 600px;
+	padding-top: 50px;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.gallery_list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: center;
 }
 
 .form{
 	padding-bottom: 150px;
-	width: 40%;
-	display: flex;
-	flex-direction: column;
 }
 
 .online_form_name{
@@ -284,8 +284,6 @@
 	padding: 10px;
 	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
-	width: 180px;
-	border: 0px;
 }
 
 .online_form_form_textbox{
@@ -293,25 +291,19 @@
 	font-family: 'Rubik', sans-serif;
 	padding: 10px;
 	font-size: 14px;
-	width: 548px;
 }
 
 .online_form_form_button{
 	border-radius: 3px;
 	padding: 10px;
-	width: 548px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	background-color: #96B0F2;
-	font-variant: all-petite-caps;
-	border: 0px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
 }
 
 .class_footer{
 	background-image: url(./image/Background_footer.jpg);
 	background-size: cover;
-	height: 300px;
+	height: 120px;
 }
 
 .container{
