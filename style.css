@@ -197,16 +197,19 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .broad_description_product_textbox_2{
 	width: 40%;
 	color: white;
-	text-align: right;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
+	justify-content: center;
 }
 
 .broad_description_product_textbox_name{
@@ -226,14 +229,90 @@
 }
 
 .broad_description_product_image{
-	width: 60%;
-	height: 500px;
+	width: 520px;
+	height: 400px;
+	align-self: center;
 	display: inline-block;
 }
 
-.image{
-	padding: 5px;
-	width: 250px;
+.broad_description_product_image_container1{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sea1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container2{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sea2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container3{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sea3.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container4{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sea4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container5{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sweetwater1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container6{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sweetwater2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container7{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sweetwater3.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+}
+
+.broad_description_product_image_container8{
+	height: 49%;
+	width: 49%;
+	background-image: url(./image/Sweetwater4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
 }
 
 .section_form{
@@ -317,7 +396,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	margin: 0;
 }
@@ -330,4 +409,87 @@
 	font-variant: all-petite-caps;
 	font-size: 20px;
 	opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+	.products_list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+
+	.products_list_point{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F8F6EA;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+	}
+
+	.products_list_point_div{
+	display: flex;
+	align-items: center;
+	width: 60%;
+	height: 90px;
+	}
+
+	.broad_description_product{
+	width: 90%;
+	height: 450px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+	justify-content: space-around;
+	}
+
+	.broad_description_product_textbox_1{
+	width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	}
+
+	.broad_description_product_textbox_2{
+	width: 100%;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+
+	.broad_description_product_image{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	}
+
+	.broad_description_product_image_container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	}
+
+	.image{
+	padding: 5px;
+	height: auto;
+	width: 24%;
+	}
+
+
 }
