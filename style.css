@@ -31,6 +31,49 @@
 	align-self: center;
 }
 
+.menu{
+	height: 35px;
+	display: none;
+	position: relative;
+}
+
+.menu_list{
+	display: none;
+	list-style: none;
+	height: 230px;
+	width: 150px;
+	top: 100%;
+	left: -20px;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgba(150, 176, 242, 0.9);
+	padding: 20px;
+	position: absolute;
+}
+
+.menu:hover .menu_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+.menu_list_point{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.menu_list_point_aqua{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
 .header_navigator{
 	list-style: none;
 	display: flex;
@@ -181,10 +224,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
-.broad_description_product{
+.broad_description_product_sea{
+	height: 400px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
+
+.broad_description_product_sweet{
 	height: 400px;
 	width: 80%;
 	display: flex;
@@ -412,11 +462,18 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+	.products{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+	}
+
 	.products_list{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 90%;
+	width: 80%;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -440,12 +497,29 @@
 	height: 90px;
 	}
 
-	.broad_description_product{
-	width: 90%;
+	.broad_description{
+	padding-top: 30px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.broad_description_product_sea{
+	width: 80%;
 	height: 450px;
 	box-sizing: content-box;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 30px;
+	justify-content: space-around;
+	}
+
+	.broad_description_product_sweet{
+	width: 80%;
+	height: 450px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column-reverse;
 	padding-bottom: 30px;
 	justify-content: space-around;
 	}
@@ -473,23 +547,111 @@
 	.broad_description_product_image{
 	width: 100%;
 	height: 200px;
-	display: flex;
-	justify-content: center;
+	align-self: center;
+	display: inline-block;
+	}
+
+
+	.broad_description_product_image_container1{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sea1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container2{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sea2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container3{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sea3.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container4{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sea4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container5{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sweetwater1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container6{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sweetwater2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container7{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sweetwater3.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+	.broad_description_product_image_container8{
+	height: 100%;
+	width: 24%;
+	background-image: url(./image/Sweetwater4.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	background-position: center;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.header_navigator{
+	list-style: none;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 400px;
+	padding: 0;
+	margin: 0;
 	align-self: center;
 	}
 
-	.broad_description_product_image_container{
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	height: auto;
+	.menu{
+	height: 35px;
+	display: block;
+	position: relative;
 	}
-
-	.image{
-	padding: 5px;
-	height: auto;
-	width: 24%;
-	}
-
 
 }
