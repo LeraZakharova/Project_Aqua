@@ -162,9 +162,17 @@
 	position: absolute;
 }
 
-.menu_list > li:hover {
-	padding: 10px;
+.menu_list_li:hover {
+	padding: 7px;
 	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+}
+
+.menu_list_li:hover .menu_list_point{
+	color: black;
+}
+
+.menu_list_li:hover .menu_list_point_aqua{
 	color: black;
 }
 
@@ -536,7 +544,7 @@
 	}
 
 	.broad_description{
-	padding-top: 30px; 
+	padding-top: 60px; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -559,6 +567,7 @@
 	display: flex;
 	flex-direction: column-reverse;
 	padding-bottom: 30px;
+	padding-top: 60px;
 	justify-content: space-around;
 	}
 
@@ -670,6 +679,10 @@
 	background-position: center;
 	}
 
+	.section_form {
+    padding-top: 60px;
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -692,5 +705,27 @@
 
 	.menu{
 	display: block;
+	}
+
+	.broad_description_product_sea{
+	width: 80%;
+	height: 450px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	justify-content: space-around;
+	}
+
+	.broad_description_product_sweet{
+	width: 80%;
+	height: 450px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column-reverse;
+	padding-bottom: 30px;
+	padding-top: 90px;
+	justify-content: space-around;
 	}
 }
