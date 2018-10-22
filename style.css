@@ -3,37 +3,46 @@
 }
 
 .header{
-	background-image: url(./image/Background.jpg);
-	height: 450px;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 210px;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	flex-direction: column;
+}
+.header_top_line{
+	background-color: #0C0C39;
+	height: 35px;
+	width: 100%;
+
 }
 
 .header_container{
 	width: 100%;
-	height: 70px;
+	height: 175px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.header_name{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+}
+
 
 .title{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-variant: all-petite-caps;
-	font-size: 35px;
+	font-size: 45px;
 	margin: 0;
 	height: 49px;
 	align-self: center;
-	padding-left: 100px;
 }
 
 .title_link{
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 .header_navigator{
@@ -46,7 +55,6 @@
 	padding: 0;
 	margin: 0;
 	align-self: center;
-	padding-right: 100px;
 }
 
 .header_navigator > li {
@@ -57,7 +65,7 @@
 .header_navigator_link{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-decoration: none;
 }
@@ -73,7 +81,7 @@
 .header_navigator_link_aqua{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-decoration: none;
 	position: relative;
@@ -199,54 +207,88 @@
 
 .main{
 	background-image: linear-gradient(to top, #0C0C39, #96B0F2);
-	padding-top: 100px;
+}
 
+.main_image{
+	background-image: url(./image/background.jpg);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .products{
 	display: flex;
 	justify-content: center;
-	padding-bottom: 100px;
 }
 
 .products_list{
 	display: flex;
 	justify-content: space-between;
-	width: 80%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.products_list_point{
+.products_list_point_1{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #F8F6EA;
-	width: 32%;
+	background-color: #A9BEF4;
+	width: 33%;
+	padding: 1%;
 	height: 350px;
+	color: #F1F4F6;
+}
+
+.products_list_point_2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #BCCCF6;
+	width: 33%;
+	padding: 1%;
+	height: 350px;
+	color: #F1F4F6;
+}
+
+.products_list_point_3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #B2C5F5;
+	width: 33%;
+	padding: 1%;
+	height: 350px;
+	color: #F1F4F6;
 }
 
 .products_list_point_name{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-variant: all-petite-caps;
-	font-size: 20px;
+	font-size: 40px;
+	height: 110px;
+	width: 80%;
+	text-align: center;
 	margin: 0;
 	padding-top: 10px;
 }
 
 
 .products_list_point_div{
-	display: flex;
+	display: none;
 	align-items: center;
 	width: 60%;
 	height: 170px;
 }
 
 .products_list_point_image{
-	height: 35px;
+	height: 70px;
+	padding-top: 20px;
 }
 
 .products_list_point_text{
@@ -262,8 +304,7 @@
 	color: #020411;
 }
 
-.broad_description{
-	padding-top: 50px; 
+.broad_description{ 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -271,18 +312,58 @@
 
 .broad_description_product_sea{
 	height: 400px;
-	width: 80%;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	background-image: url(./image/sea3.jpg);
+	background-size: cover;
+}
+
+.broad_description_product_sea::before {
+	content: '';
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.broad_description_product_sea:hover .broad_description_product_textbox_text_1{
+	opacity: 1;
+}
+
+.broad_description_product_sea:hover::before{
+	opacity: 1;
 }
 
 .broad_description_product_sweet{
 	height: 400px;
-	width: 80%;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	padding-bottom: 50px;
-	padding-top: 150px;
+	justify-content: flex-end;
+	background-image: url(./image/sweetwater1.jpg);
+	background-size: cover;
+}
+
+.broad_description_product_sweet::before {
+	content: '';
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.broad_description_product_sweet:hover .broad_description_product_textbox_text_2{
+	opacity: 1;
+}
+
+.broad_description_product_sweet:hover::before{
+	opacity: 1;
 }
 
 .broad_description_product_textbox_1{
@@ -313,99 +394,26 @@
 	font-size: 30px;
 }
 
-.broad_description_product_textbox_text{
+.broad_description_product_textbox_text_1{
 	font-family: 'Rubik', sans-serif;
 	margin: 0;
 	width: 90%;
 	padding-top: 20px;
 	font-style: 16px;
+	opacity: 0;
+	transition: all 0.5s;
+	display: none;
 }
 
-.broad_description_product_image{
-	width: 520px;
-	height: 400px;
-	align-self: center;
-	display: inline-block;
-}
-
-.broad_description_product_image_container1{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sea1.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container2{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sea2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container3{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sea3.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container4{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sea4.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container5{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sweetwater1.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container6{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sweetwater2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container7{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sweetwater3.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-}
-
-.broad_description_product_image_container8{
-	height: 49%;
-	width: 49%;
-	background-image: url(./image/Sweetwater4.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
+.broad_description_product_textbox_text_2{
+	font-family: 'Rubik', sans-serif;
+	margin: 0;
+	width: 90%;
+	padding-top: 20px;
+	font-style: 16px;
+	opacity: 0;
+	transition: all 0.5s;
+	display: none;
 }
 
 .section_form{
