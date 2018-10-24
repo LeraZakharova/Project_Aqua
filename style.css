@@ -9,7 +9,7 @@
 }
 .header_top_line{
 	background-color: #0C0C39;
-	height: 35px;
+	height: 30px;
 	width: 100%;
 
 }
@@ -210,8 +210,8 @@
 }
 
 .main_image{
-	background-image: url(./image/background.jpg);
 	height: 400px;
+	background-image: url(./image/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -240,6 +240,31 @@
 	padding: 1%;
 	height: 350px;
 	color: #F1F4F6;
+	transition: all 0.5s;
+}
+
+
+.products_list_point_1::before{
+	content: '';
+	display: block;
+	background-color: rgba(12, 12, 57, 0.3);
+	position: absolute;
+	height: 350px;
+	width: 33%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.products_list_point_1:hover::before{
+	opacity: 1;
+}
+
+.products_list_point_1:hover .products_list_point_div1{
+	display: flex;
 }
 
 .products_list_point_2{
@@ -254,6 +279,29 @@
 	color: #F1F4F6;
 }
 
+.products_list_point_2::before{
+	content: '';
+	display: block;
+	background-color: rgba(12, 12, 57, 0.3);
+	position: absolute;
+	height: 350px;
+	width: 33%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.products_list_point_2:hover::before{
+	opacity: 1;
+}
+
+.products_list_point_2:hover .products_list_point_div2{
+	display: flex;
+}
+
 .products_list_point_3{
 	display: flex;
 	flex-direction: column;
@@ -266,29 +314,70 @@
 	color: #F1F4F6;
 }
 
+.products_list_point_3::before{
+	content: '';
+	display: block;
+	background-color: rgba(12, 12, 57, 0.3);
+	position: absolute;
+	height: 350px;
+	width: 33%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.products_list_point_3:hover::before{
+	opacity: 1;
+}
+
+.products_list_point_3:hover .products_list_point_div3{
+	display: flex;
+}
+
 .products_list_point_name{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-variant: all-petite-caps;
 	font-size: 40px;
-	height: 110px;
 	width: 80%;
 	text-align: center;
 	margin: 0;
 	padding-top: 10px;
+	position: relative;
 }
 
 
-.products_list_point_div{
+.products_list_point_div1{
 	display: none;
 	align-items: center;
 	width: 60%;
 	height: 170px;
+	position: relative;
+}
+
+.products_list_point_div2{
+	display: none;
+	align-items: center;
+	width: 60%;
+	height: 170px;
+	position: relative;
+}
+
+.products_list_point_div3{
+	display: none;
+	align-items: center;
+	width: 60%;
+	height: 170px;
+	position: relative;
 }
 
 .products_list_point_image{
 	height: 70px;
 	padding-top: 20px;
+	position: relative;
 }
 
 .products_list_point_text{
@@ -331,7 +420,7 @@
 }
 
 .broad_description_product_sea:hover .broad_description_product_textbox_text_1{
-	opacity: 1;
+	display: flex;
 }
 
 .broad_description_product_sea:hover::before{
@@ -359,7 +448,7 @@
 }
 
 .broad_description_product_sweet:hover .broad_description_product_textbox_text_2{
-	opacity: 1;
+	display: flex;
 }
 
 .broad_description_product_sweet:hover::before{
@@ -374,6 +463,7 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	position: relative;
 }
 
 .broad_description_product_textbox_2{
@@ -384,6 +474,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .broad_description_product_textbox_name{
@@ -400,8 +491,6 @@
 	width: 90%;
 	padding-top: 20px;
 	font-style: 16px;
-	opacity: 0;
-	transition: all 0.5s;
 	display: none;
 }
 
@@ -411,20 +500,16 @@
 	width: 90%;
 	padding-top: 20px;
 	font-style: 16px;
-	opacity: 0;
-	transition: all 0.5s;
 	display: none;
 }
 
 .section_form{
  	display: flex;
  	justify-content: center;
- 	padding-top: 100px;
  }
 
 .form{
-	padding-bottom: 150px;
-	width: 600px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -441,9 +526,8 @@
 
 .online_form_form{
 	display: flex;
-	justify-content: space-around;
-	height: 300px;
-	flex-direction: column;
+	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
 	margin: 0;
 }
@@ -462,13 +546,13 @@
 	font-family: 'Rubik', sans-serif;
 	padding: 10px;
 	font-size: 14px;
-	width: 548px;
+	width: 300px;
 }
 
 .online_form_form_button{
 	border-radius: 3px;
 	padding: 10px;
-	width: 548px;
+	width: 130px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
@@ -480,20 +564,17 @@
 .class_footer{
 	background-image: url(./image/Background_footer.jpg);
 	background-size: cover;
-	height: 300px;
 }
 
 .container{
 	display: flex;
 	justify-content: center;
-	height: 100%;
 	background: RGB(0, 0, 0, 0.4);
 
 }
 
 .container_contacts{
 	width: 80%;
-	height: 50%;
 	align-self: center;
 	display: flex;
 	flex-direction: column;
