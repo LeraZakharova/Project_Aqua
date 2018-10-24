@@ -206,7 +206,7 @@
 }
 
 .main{
-	background-image: linear-gradient(to top, #0C0C39, #96B0F2);
+	background-color: white;
 }
 
 .main_image{
@@ -503,10 +503,9 @@
 	display: none;
 }
 
-.section_form{
- 	display: flex;
- 	justify-content: center;
- }
+.section_where{
+	height: 600px;
+}
 
 .form{
 	width: 100%;
