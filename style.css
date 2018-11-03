@@ -51,7 +51,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 400px;
+	width: 500px;
 	padding: 0;
 	margin: 0;
 	align-self: center;
@@ -65,34 +65,13 @@
 .header_navigator_link{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	padding: 6px;
 	color: black;
-	font-size: 16px;
+	font-size: 20px;
 	text-decoration: none;
+	font-variant: all-petite-caps;
 }
 
- .header_navigator_link:hover {
- 	background-color: rgba(255, 255, 255, 0.9);
- 	padding: 6px;
-	border-radius: 5px;
-	color: black;
- }
-
-
-.header_navigator_link_aqua{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	color: black;
-	font-size: 16px;
-	text-decoration: none;
-	position: relative;
-}
-
-.header_navigator_link_aqua:hover{
-	background-color: rgba(255, 255, 255, 0.9);
- 	padding: 6px;
-	border-radius: 5px;
-	color: black;
-}
 
 .header_navigator_aquariums{
 	position: absolute;
@@ -106,41 +85,6 @@
 	border-radius: 5px
 }
 
-.header_navigator_aquariums > li {
-	padding: 6px;
-
-}
-
-.header_navigator_aquariums > li > a {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-}
-
-.header_navigator_aquariums > li > a:hover {
-	background-color: rgba(255, 255, 255, 0.9);
- 	padding: 6px;
-	border-radius: 5px;
-	color: black;
-}
-
-.header_navigator_aquariums_point{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-}
-
-
-.header_navigator_link_aqua:hover .header_navigator_aquariums{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: left;
-}
 
 .header_navigator_link_menu{
 	position: relative;
@@ -503,14 +447,19 @@
 	display: none;
 }
 
-.section_where{
-	height: 600px;
+.apply{
+	height: 400px;
+	background-color: blue;
+	display: flex;
+	justify-content: center;
 }
 
 .form{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .online_form_name{
@@ -521,14 +470,30 @@
 	color: white;
 	font-variant: all-petite-caps;
 	font-size: 30px;
+	margin: 0;
+	padding-top: 30px;
 }
 
 .online_form_form{
+	width: 500px;
+	height: 250px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	margin: 0;
+	padding-bottom: 40px;
+}
+
+.online_form_data{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 150px;
+}
+
+.online_form{
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
-	margin: 0;
 }
 
 .online_form_form_placeholder{
@@ -542,6 +507,7 @@
 
 .online_form_form_textbox{
 	border-radius: 3px;
+	border:none;
 	font-family: 'Rubik', sans-serif;
 	padding: 10px;
 	font-size: 14px;
@@ -551,10 +517,10 @@
 .online_form_form_button{
 	border-radius: 3px;
 	padding: 10px;
-	width: 130px;
+	width: 500px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 14px;
 	background-color: #96B0F2;
 	font-variant: all-petite-caps;
 	border: 0px;
@@ -593,225 +559,3 @@
 	opacity: 1;
 }
 
-@media screen and (max-width: 1100px) {
-
-	.products{
-	display: flex;
-	justify-content: center;
-	padding-bottom: 30px;
-	}
-
-	.products_list{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 80%;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	}
-
-	.products_list_point{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #F8F6EA;
-	width: 100%;
-	height: 250px;
-	margin-bottom: 10px;
-	}
-
-	.products_list_point_div{
-	display: flex;
-	align-items: center;
-	width: 60%;
-	height: 90px;
-	}
-
-	.broad_description{
-	padding-top: 60px; 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	}
-
-	.broad_description_product_sea{
-	width: 80%;
-	height: 450px;
-	box-sizing: content-box;
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 30px;
-	justify-content: space-around;
-	}
-
-	.broad_description_product_sweet{
-	width: 80%;
-	height: 450px;
-	box-sizing: content-box;
-	display: flex;
-	flex-direction: column-reverse;
-	padding-bottom: 30px;
-	padding-top: 60px;
-	justify-content: space-around;
-	}
-
-	.broad_description_product_textbox_1{
-	width: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	}
-
-	.broad_description_product_textbox_2{
-	width: 100%;
-	color: white;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	}
-
-	.broad_description_product_image{
-	width: 100%;
-	height: 200px;
-	align-self: center;
-	display: inline-block;
-	}
-
-
-	.broad_description_product_image_container1{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sea1.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container2{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sea2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container3{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sea3.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container4{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sea4.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container5{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sweetwater1.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container6{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sweetwater2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container7{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sweetwater3.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.broad_description_product_image_container8{
-	height: 100%;
-	width: 24%;
-	background-image: url(./image/Sweetwater4.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	background-position: center;
-	}
-
-	.section_form {
-    padding-top: 60px;
-	}
-
-}
-
-@media screen and (max-width: 800px) {
-	.header_navigator_link{
-	display: none;
-	}
-
-	.header_navigator_link_aqua{
-	display: none;
-	}
-
-	.header_navigator{
-	padding-right: 0;
-	}
-
-	.header_navigator_link_menu{
-	display: flex;
-	justify-content: center;
-	}
-
-	.menu{
-	display: block;
-	}
-
-	.broad_description_product_sea{
-	width: 80%;
-	height: 450px;
-	box-sizing: content-box;
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 30px;
-	padding-top: 30px;
-	justify-content: space-around;
-	}
-
-	.broad_description_product_sweet{
-	width: 80%;
-	height: 450px;
-	box-sizing: content-box;
-	display: flex;
-	flex-direction: column-reverse;
-	padding-bottom: 30px;
-	padding-top: 90px;
-	justify-content: space-around;
-	}
-}
