@@ -11,7 +11,25 @@
 	background-color: #0C0C39;
 	height: 30px;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.header_top_phone{
+	padding-left: 40px;
+}
+
+.social_networks{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 110px;
+	margin: 0;
+	padding-right: 40px;
 }
 
 .header_container{
@@ -188,23 +206,8 @@
 }
 
 
-.products_list_point_1::before{
-	content: '';
-	display: block;
-	background-color: rgba(12, 12, 57, 0.3);
-	position: absolute;
-	height: 350px;
-	width: 33%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 1%;
-	padding-right: 0;
-	opacity: 0;
-	transition: all 0.5s;
-}
-
-.products_list_point_1:hover::before{
-	opacity: 1;
+.products_list_point_1:hover{
+	background-color: #9AADDE;
 }
 
 .products_list_point_1:hover .products_list_point_div1{
@@ -223,23 +226,9 @@
 	color: #F1F4F6;
 }
 
-.products_list_point_2::before{
-	content: '';
-	display: block;
-	background-color: rgba(12, 12, 57, 0.3);
-	position: absolute;
-	height: 350px;
-	width: 33%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 0;
-	padding-right: 0;
-	opacity: 0;
-	transition: all 0.5s;
-}
 
-.products_list_point_2:hover::before{
-	opacity: 1;
+.products_list_point_2:hover{
+	background-color: #9AADDE;
 }
 
 .products_list_point_2:hover .products_list_point_div2{
@@ -258,23 +247,9 @@
 	color: #F1F4F6;
 }
 
-.products_list_point_3::before{
-	content: '';
-	display: block;
-	background-color: rgba(12, 12, 57, 0.3);
-	position: absolute;
-	height: 350px;
-	width: 33%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 1%;
-	padding-right: 0;
-	opacity: 0;
-	transition: all 0.5s;
-}
 
-.products_list_point_3:hover::before{
-	opacity: 1;
+.products_list_point_3:hover{
+	background-color: #9AADDE;
 }
 
 .products_list_point_3:hover .products_list_point_div3{
@@ -449,7 +424,8 @@
 
 .apply{
 	height: 400px;
-	background-color: blue;
+	background-image: url(./image/Sea4.jpg);
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 }
@@ -527,15 +503,14 @@
 }
 
 .class_footer{
-	background-image: url(./image/Background_footer.jpg);
-	background-size: cover;
+	height: 150px;
+	background-color: #0C0C39;
 }
 
 .container{
+	height: 150px;
 	display: flex;
 	justify-content: center;
-	background: RGB(0, 0, 0, 0.4);
-
 }
 
 .container_contacts{
@@ -555,7 +530,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-variant: all-petite-caps;
-	font-size: 20px;
+	font-size: 18px;
 	opacity: 1;
 }
 
