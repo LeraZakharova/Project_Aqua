@@ -422,7 +422,7 @@
 }
 
 .apply{
-	height: 400px;
+	height: 500px;
 	background-image: url(./image/Sea4.jpg);
 	background-size: cover;
 	display: flex;
@@ -590,4 +590,94 @@
 		border-bottom: solid;
 		border-width: 1px;
 	}
+
+	.broad_description_product_textbox_text_1{
+		text-align: left;
+	}
+
+	.broad_description_product_textbox_text_2{
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.broad_description_product_textbox_1{
+		width: 100%
+	}
+
+	.broad_description_product_textbox_2{
+		width: 100%
+	}
+
+	.broad_description_product_textbox_text_1{
+		text-align: center;
+	}
+
+	.broad_description_product_textbox_text_2{
+		text-align: center;
+	}
+
+	.header_top_line{
+		height: 100px;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.header_top_phone{
+		padding-left: 0;
+		padding-right: 5px;
+	}
+
+	.header_top_email{
+		padding-right: 5px;
+	}
+
+	.social_networks{
+		padding: 5px;
+	}
+
+	.header_container{
+		height: 100px;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.header_navigator{
+		flex-direction: column;
+		width: 180px;
+		align-items: flex-start;
+		display: none;
+	}
+
+	.main_image{
+		height: 300px;
+	}
+
+	.online_form{
+		flex-direction: column;
+		align-items: center;
+		height: 235px;
+	}
+
+	.online_form_form{
+		width: 80%;
+		height: 350px;
+		padding: 0;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.online_form_form_textbox{
+		width: 180px;
+		height: 65px;
+	}
+
+	.online_form_form_button{
+		width: 180px;
+	}
+
+	.form{
+		justify-content: center;
+	}
+
 }
