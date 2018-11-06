@@ -113,14 +113,14 @@
         <div class="form">
         <h2 class="online_form_name">Оставить заявку</h2>
           <p><a name="form"></a></p>
-          <form class="online_form_form">
+          <form class="online_form_form" method="post" action="form.php">
             <div class="online_form">
               <div class="online_form_data">
-                <input class="online_form_form_placeholder" type="Text" placeholder="Ваше Имя">
-                <input class="online_form_form_placeholder" type="Text" placeholder="E-mail">
-                <input class="online_form_form_placeholder" type="Number" placeholder="Номер телефона">
+                <input class="online_form_form_placeholder" name="Имя" type="Text" placeholder="Ваше Имя" required>
+                <input class="online_form_form_placeholder" name="E-mail" type="email" placeholder="E-mail" required>
+                <input id="phone" class="online_form_form_placeholder" name="Тлефон" type="tel" placeholder="Номер телефона"  required>
               </div>
-                <textarea class="online_form_form_textbox" name="Description" cols="100" rows="3" placeholder="Введите краткое описание заказа (не обязательно)"></textarea>
+                <textarea class="online_form_form_textbox" name="Описание" cols="100" rows="3" placeholder="Введите краткое описание заказа (не обязательно)"></textarea>
             </div>
             <button class="online_form_form_button" type="submit">Отправить</button>
           </form>
@@ -140,6 +140,8 @@
           </div>
         </div>
     </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="script.js"></script>
   </body>
 </html>

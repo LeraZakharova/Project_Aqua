@@ -442,6 +442,7 @@
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
+	text-align: center;
 	color: white;
 	font-variant: all-petite-caps;
 	font-size: 30px;
@@ -621,6 +622,7 @@
 		height: 100px;
 		flex-direction: column;
 		align-items: flex-end;
+		justify-content: space-around;
 	}
 
 	.header_top_phone{
@@ -660,7 +662,7 @@
 	}
 
 	.online_form_form{
-		width: 80%;
+		width: 180px;
 		height: 350px;
 		padding: 0;
 		align-items: center;
@@ -680,4 +682,10 @@
 		justify-content: center;
 	}
 
+}
+
+@media all and (max-width: 300px){
+	.products_list_point_div1{
+		width: 90%;
+	}
 }
