@@ -575,6 +575,7 @@
 	.products_list_point_1{
 		height: 300px;
 		width: 100%;
+		padding: 0;
 		border-top: solid;
 		border-width: 1px;
 	}
@@ -582,6 +583,7 @@
 	.products_list_point_2{
 		height: 300px;
 		width: 100%;
+		padding: 0;
 		border-right: none;
 		border-left: none;
 		border-top: solid;
@@ -592,6 +594,7 @@
 	.products_list_point_3{
 		height: 300px;
 		width: 100%;
+		padding: 0;
 		border-bottom: solid;
 		border-width: 1px;
 	}
