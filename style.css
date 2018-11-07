@@ -8,7 +8,7 @@
 	flex-direction: column;
 }
 .header_top_line{
-	background-color: #0C0C39;
+	background-color: #ea4a0c;
 	height: 30px;
 	width: 100%;
 	display: flex;
@@ -176,6 +176,7 @@
 	background-image: url(./image/Background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position-y: center;
 }
 
 .products{
@@ -197,7 +198,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #A9BEF4;
+	background-color: #73A3FF;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -206,7 +207,7 @@
 
 
 .products_list_point_1:hover{
-	background-color: #93DA7F;
+	background-color: #ea4a0c;
 }
 
 .products_list_point_1:hover .products_list_point_div1{
@@ -218,7 +219,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #A9BEF4;
+	background-color: #73A3FF;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -231,7 +232,7 @@
 
 
 .products_list_point_2:hover{
-	background-color: #93DA7F;
+	background-color: #ea4a0c;
 }
 
 .products_list_point_2:hover .products_list_point_div2{
@@ -243,7 +244,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #A9BEF4;
+	background-color: #73A3FF;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -252,7 +253,7 @@
 
 
 .products_list_point_3:hover{
-	background-color: #93DA7F;
+	background-color: #ea4a0c;
 }
 
 .products_list_point_3:hover .products_list_point_div3{
@@ -322,8 +323,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
-	background-image: url(./image/Sea3.jpg);
+	background-image: url(./image/Sea.jpg);
 	background-size: cover;
+	background-position-y: center;
 }
 
 .broad_description_product_sea::before {
@@ -350,8 +352,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	background-image: url(./image/Sweetwater1.jpg);
+	background-image: url(./image/Sweetwater.jpg);
 	background-size: cover;
+	background-position-y: center;
 }
 
 .broad_description_product_sweet::before {
@@ -423,9 +426,10 @@
 
 .apply{
 	height: 500px;
-	background-image: url(./image/Sea4.jpg);
+	background-image: url(./image/Application.jpg);
 	background-size: cover;
 	display: flex;
+	background-position-y: center;
 	justify-content: center;
 }
 
@@ -497,14 +501,14 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 14px;
-	background-color: #96B0F2;
+	background-color: #73A3FF;
 	font-variant: all-petite-caps;
 	border: 0px;
 }
 
 .class_footer{
 	height: 150px;
-	background-color: #0C0C39;
+	background-color: #000040;
 }
 
 .container{
