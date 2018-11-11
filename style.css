@@ -26,7 +26,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 60px;
+	width: 80px;
 	margin: 0;
 	padding-right: 40px;
 }
@@ -36,14 +36,13 @@
 	height: 175px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: #CCDDFF;
 	color: #000012;
 }
 
 .header_name{
 	width: 100%;
-	height: 100px;
 	display: flex;
 	justify-content: center;
 }
@@ -53,9 +52,8 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-variant: all-petite-caps;
-	font-size: 45px;
+	font-size: 50px;
 	margin: 0;
-	height: 49px;
 	align-self: center;
 }
 
@@ -76,10 +74,6 @@
 	align-self: center;
 }
 
-.header_navigator > li {
-	padding-bottom: 15px;
-	padding-top: 15px;
-}
 
 .header_navigator_link{
 	font-family: 'Montserrat', sans-serif;
@@ -89,83 +83,6 @@
 	font-size: 20px;
 	text-decoration: none;
 	font-variant: all-petite-caps;
-}
-
-
-.header_navigator_aquariums{
-	position: absolute;
-	display: none;
-	width: 150px;
-	top: 100%;
-	left: -1px;
-	padding: 6px;
-	list-style: none;
-	background-color: rgba(12, 12, 57, 0.9);
-	border-radius: 5px
-}
-
-
-.header_navigator_link_menu{
-	position: relative;
-}
-
-.menu{
-	height: 30px;
-	padding-left: 115px;
-	padding-right: 115px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	display: none;
-}
-
-.menu_list{
-	display: none;
-	list-style: none;
-	height: 230px;
-	width: 200px;
-	top: 100%;
-	left: 0;
-	background-color: rgba(150, 176, 242, 0.9);
-	padding: 20px;
-	padding-left: 40px;
-	position: absolute;
-}
-
-.menu_list_li:hover {
-	padding: 7px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 5px;
-}
-
-.menu_list_li:hover .menu_list_point{
-	color: black;
-}
-
-.menu_list_li:hover .menu_list_point_aqua{
-	color: black;
-}
-
-.header_navigator_link_menu:hover .menu_list{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.menu_list_point{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-}
-
-.menu_list_point_aqua{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-	padding-left: 20px;
 }
 
 .main{
@@ -178,6 +95,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: center;
+	background-position-x: center;
 }
 
 .products{
@@ -268,7 +186,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-variant: all-petite-caps;
-	font-size: 40px;
+	font-size: 35px;
 	width: 80%;
 	text-align: center;
 	margin: 0;
@@ -505,32 +423,38 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 14px;
-	background-color: #73A3FF;
+	background-color: #CCDDFF;
 	font-variant: all-petite-caps;
 	border: 0px;
 }
 
 .class_footer{
 	height: 150px;
-	background-color: #000040;
-}
-
-.container{
-	height: 150px;
+	background-color: black;
 	display: flex;
 	justify-content: center;
 }
 
-.container_contacts{
+.container{
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
 	width: 80%;
 	align-self: center;
-	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+}
+
+.container_contacts{
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
 }
+
 
 .container_contacts_link{
 	color: #F8F6EA;
@@ -540,6 +464,38 @@
 	font-variant: all-petite-caps;
 	font-size: 18px;
 	opacity: 1;
+}
+
+.footer_line{
+	height: 1px;
+	width: 200px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.container_copyright{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.copyright{
+	color: #F8F6EA;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-variant: all-petite-caps;
+	font-size: 12px;
+	opacity: 1;
+}
+
+.copyright_text{
+	margin: 0;
+}
+
+.link_copyright{
+	text-decoration: none;
+	color: #F8F6EA;
 }
 
 
@@ -692,7 +648,6 @@
 	.form{
 		justify-content: center;
 	}
-
 }
 
 @media all and (max-width: 300px){
