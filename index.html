@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Aquacube. Обслуживание и изготовление аквариумов.</title>
+    <title>Aquacube. Изготовление и обслуживание аквариумов.</title>
     <meta name="keywords" content="Аквариум, купить аквариум, заказать аквариум, аквариум для дома, аквариум для офиса, аквариум для ресторана, обслуживание аквариума, ремонт аквариума, аквариумные рыбки">
     <meta name="description" content="Изготовление и обслуживание морских и пресноводных аквариумов для дома, офиса и ресторанов.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -63,30 +63,60 @@
       </section>
       <section class="section_products">
         <div class="products">
-          <p><a name="products"></a></p>
           <ul class="products_list">
-            <li class="products_list_point_1">
-              <img src="./image/aquarium.svg" class="products_list_point_image">
-              <h3 class="products_list_point_name">Обслуживание</h3>         
-              <div class="products_list_point_div1">
-              	<p class="products_list_point_text">Полный комплекс по уходу за аквариумом: проверка параметров воды, контроль работы оборудования, чистка, кормление и лечение. Гарантия на животных.</p>
-              </div>
-            </li>
-            <li class="products_list_point_2">
+              <li class="products_list_point_1" onclick="showHide('maintenance'); hide('design'); hide('key_ready')">
+                <p><a name="products"></a></p>
+                <img src="./image/aquarium.svg" class="products_list_point_image">
+                <h3 class="products_list_point_name">Обслуживание</h3>     
+                <div class="products_list_point_div1">
+                	<p class="products_list_point_text">Полный комплекс по уходу за аквариумом: проверка параметров воды, контроль работы оборудования, чистка, кормление и лечение. Гарантия на животных.</p>
+                </div>
+              </li>
+            <li class="products_list_point_2" onclick="showHide('design'); hide('maintenance'); hide('key_ready')">
               <img src="./image/aquarium2.svg" class="products_list_point_image">
               <h3 class="products_list_point_name">Оформление</h3>
               	<div class="products_list_point_div2">
 	              <p class="products_list_point_text">Морской или пресноводный аквариум. Натуральный камень и дерево. Живые растения. Гарантия на качество материалов.</p>
 	            </div>
             </li>
-            <li class="products_list_point_3">
+            <li class="products_list_point_3" onclick="showHide('key_ready'); hide('maintenance'); hide('design')">
               <img src="./image/aquarium3.svg" class="products_list_point_image">
               <h3 class="products_list_point_name">Аквариум под ключ</h3>
               <div class="products_list_point_div3">
 	              <p class="products_list_point_text">Путь от эскиза до запуска аквариума. Профессиональная консультация на каждом этапе. Гарантия на выполненные работы.</p>
-	           </div>
+              </div>
             </li>
           </ul>
+          <div class="maintenance" id="maintenance">
+            <p>Не стоит забывать, что обитатели аквариума — это живые существа, которым необходим регулярный уход. Для поддержания комфортных условий их обитания важно:</p>
+              <ul>
+                <li>соблюдать режим кормления</li>
+                <li>проводить чистку</li>
+                <li>поддерживать подходящие параметры воды</li>
+                <li>проверять исправность оборудования</li>
+                <li>своевременно диагностировать и лечить болезни</li>
+              </ul>
+              <p>Мы оцениваем необходимость различных процедур в зависимости от типа, размеров, оснащения аквариума и потребностей его жителей. На основании этой оценки с учетом Ваших пожеланий мы составляем индивидуальный план обслуживания для каждого объекта.</p>
+          </div>
+          <div class="design" id="design">
+            <p>Существует огромное множество вариантов оформления аквариумов, и мы поможем подобрать подходящий дизайн в зависимости от интерьера, характера использования аквариума с учетом Ваших пожеланий.
+            <ul>
+              <li>При оформлении мы используем натуральные камень и дерево, живые растения.</li>
+              <li>Определяем подходящее наполнение для морских и пресноводных аквариумов.</li>
+              <li>Следим за тем, чтобы обитатели не только сочетались, но и могли мирно сосуществовать друг с другом.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="key_ready" id="key_ready">
+            <p>Чтобы поставить аквариум, Вам не придется бегать по разным фирмам в поисках нужного оборудования, рыбок, материалов, а потом искать кого-то, кто всё это соберёт и установит. Мы оказываем полный комплекс услуг по изготовлению аквариума: </p>
+            <ul>
+              <li>создание эскиза</li>
+              <li>заказ каркаса, оборудования, материалов и наполнения</li>
+              <li>установка и запуск</li>
+              <li>гарантия на выполненные работы</li>
+            </ul>
+            <p>Мы обязательно учтем Ваши пожелания, проконсультируем по каждому из пунктов, согласуем план проекта и выполним все работы в установленный срок.</p>
+          </div>
         </div>
       </section>
       <section class="broad_description">

@@ -100,6 +100,7 @@
 
 .products{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
@@ -122,6 +123,7 @@
 	padding: 1%;
 	height: 350px;
 	color: #000012;
+	cursor: pointer;
 }
 
 
@@ -227,11 +229,37 @@
 	margin: 0;
 }
 
-.products_list_point_link{
+.maintenance{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
 	font-family: 'Rubik', sans-serif;
-	font-size: 13px;
-	text-decoration: none;
-	color: #020411;
+	font-style: 16px;
+	text-align: left;
+	margin: 30px;
+}
+
+.design{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
+	font-family: 'Rubik', sans-serif;
+	font-style: 16px;
+	text-align: left;
+	margin: 30px;
+}
+
+.key_ready{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
+	font-family: 'Rubik', sans-serif;
+	font-style: 16px;
+	text-align: left;
+	margin: 30px;
 }
 
 .broad_description{ 
