@@ -50,7 +50,7 @@
             <a href="#sea" class="header_navigator_link">Аквариумы</a>
           </li>
           <li>
-            <a href="#form" class="header_navigator_link">Заказать</a>
+            <a href="#form" onclick="showHide('apply')" class="header_navigator_link">Заказать</a>
           </li>
         </ul>
       </div>
@@ -138,9 +138,19 @@
         </div>
       </section>
       <section class="apply">
+        <div id="apply" class="div_show_hide">
+          <p class="link_location"><a name="form"></a></p>
+          <h3 class="div_products_list_point_name">Как заказать</h3>
+          <p>Чтобы заказать у нас изготовление, обслуживание аквариума или уточнить интересующую Вас информацию, свяжитесь с нами</p>
+          <ul>
+            <li>по электронной почте <a href="#">info@aquaqube.ru</a></li>
+            <li>по телефону <a href="#">+70000000000</a></li>
+            <li>через <a href="#">WhatsApp</a> или <a href="#">Telegram</a></li>
+            <li>или заполнив форму ниже</li>
+          </ul>          
+        </div>
         <div class="form">
         <h2 class="online_form_name">Оставить заявку</h2>
-          <p class="link_location"><a name="form"></a></p>
           <form class="online_form_form" method="post" action="form.php">
             <div class="online_form">
               <div class="online_form_data">
