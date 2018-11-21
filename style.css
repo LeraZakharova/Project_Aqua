@@ -6,9 +6,10 @@
 	display: flex;
 	flex-direction: column;
 }
+
 .header_top_line{
 	background-color: #04030F;
-	height: 30px;
+	height: 35px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -17,7 +18,12 @@
 }
 
 .header_top_phone{
-	padding-left: 40px;
+	padding-left: 5%;
+}
+
+
+.div_social_networks{
+	padding-right: 5%;
 }
 
 .social_networks{
@@ -28,33 +34,52 @@
 	align-items: center;
 	width: 80px;
 	margin: 0;
-	padding-right: 40px;
+	padding: 0;
 }
 
-.header_container{
-	width: 100%;
-	height: 175px;
+.main_image{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	background-color: #CCDDFF;
-	color: #04030F;
+	justify-content: space-between;
+	height: 450px;
+	background-image: url(./image/Sea.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+
+.main_image_text{
+	width: 80%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	color: #FFFFFF;
+	margin: 0;
 }
 
 .header_name{
-	width: 100%;
-	display: flex;
-	justify-content: center;
+	padding-left: 5%;
+	padding-top: 5%;
 }
-
 
 .title{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-variant: all-petite-caps;
-	font-size: 50px;
+	color: #FFFFFF;
+	font-size: 60px;
 	margin: 0;
-	align-self: center;
+}
+
+.title_under{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-variant: all-petite-caps;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin: 0;
+	
 }
 
 .title_link{
@@ -68,10 +93,10 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 400px;
-	padding: 0;
+	width: 300px;
+	padding-left: 5%;
+	padding-bottom: 5%;
 	margin: 0;
-	align-self: center;
 }
 
 
@@ -79,23 +104,10 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	padding: 6px;
-	color: black;
+	color: #FFFFFF;
 	font-size: 20px;
 	text-decoration: none;
 	font-variant: all-petite-caps;
-}
-
-.main{
-	background-color: white;
-}
-
-.main_image{
-	height: 450px;
-	background-image: url(./image/Sea.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: center;
-	background-position-x: center;
 }
 
 .products{
@@ -188,21 +200,21 @@
 .products_list_point_div1{
 	display: none;
 	align-items: center;
-	width: 250px;
+	width: 300px;
 	position: relative;
 }
 
 .products_list_point_div2{
 	display: none;
 	align-items: center;
-	width: 250px;
+	width: 300px;
 	position: relative;
 }
 
 .products_list_point_div3{
 	display: none;
 	align-items: center;
-	width: 250px;
+	width: 300px;
 	position: relative;
 }
 
@@ -213,7 +225,7 @@
 
 .products_list_point_text{
 	font-family: 'Rubik', sans-serif;
-	font-style: 16px;
+	font-size: 18px;
 	text-align: center;
 	margin: 0;
 }
@@ -234,7 +246,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-variant: all-petite-caps;
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
 	margin: 0;
 	position: relative;
@@ -336,7 +348,7 @@
 	font-weight: 400;
 	font-variant: all-petite-caps;
 	margin: 0;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .broad_description_product_textbox_text_1{
@@ -381,7 +393,7 @@
 	text-align: center;
 	color: white;
 	font-variant: all-petite-caps;
-	font-size: 30px;
+	font-size: 35px;
 	margin: 0;
 	padding-top: 30px;
 }
@@ -539,6 +551,22 @@
 		height: 300px;
 	}
 
+	.products_list_point_div1{
+		width: 250px;
+	}
+
+	.products_list_point_div2{
+		width: 250px;
+	}
+
+	.products_list_point_div3{
+		width: 250px;
+	}
+
+	.products_list_point_text{
+	font-size: 16px;
+	}
+
 	.broad_description_product_textbox_text_1{
 		text-align: left;
 	}
@@ -552,7 +580,7 @@
 @media all and (max-width: 750px){
 
 	.main_image{
-	height: 300px;
+	height: 400px;
 	}
 
 	.products_list_point_1{
@@ -607,6 +635,15 @@
 @media all and (max-width: 600px){
 	.main_image{
 		height: 250px;
+		align-items: center;
+	    justify-content: center;
+	}
+
+	.header_name{
+		padding: 0;
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
 	}
 
 	.products_list_point_1{
@@ -640,21 +677,20 @@
 	.header_top_line{
 		height: 100px;
 		flex-direction: column;
-		align-items: flex-end;
+		align-items: flex-start;
 		justify-content: space-around;
 	}
 
 	.header_top_phone{
-		padding-left: 0;
-		padding-right: 5px;
+		padding-left: 5%;
 	}
 
 	.header_top_email{
-		padding-right: 5px;
+		padding-left: 5%;
 	}
 
-	.social_networks{
-		padding: 5px;
+	.div_social_networks{
+		padding-left: 5%;
 	}
 
 	.header_container{
