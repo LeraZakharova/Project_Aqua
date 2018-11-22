@@ -42,25 +42,26 @@
           <div class="header_name">
             <h1 class="title">Aquacube</h1>
             <h4 class="title_under">Аквариумы на заказ</h4>
-          </div>        	
-          <ul class="header_navigator">
-            <li>
-              <a href="#products" class="header_navigator_link">Услуги</a>
-            </li>
-            <li>
-              <a href="#sea" class="header_navigator_link">Аквариумы</a>
-            </li>
-            <li>
-              <a href="#form" onclick="showHide('apply')" class="header_navigator_link">Заказать</a>
-            </li>
-          </ul>
+          </div>
+          <nav id="navigation">
+            <ul class="header_navigator">
+              <li>
+                <a href="#products" class="header_navigator_link">Услуги</a>
+              </li>
+              <li>
+                <a href="#aquariums" class="header_navigator_link">Аквариумы</a>
+              </li>
+              <li>
+                <a href="#apply" class="header_navigator_link">Заказать</a>
+              </li>
+            </ul>
+          </nav>
       </div>
     </header>
     <main>
-      <section class="section_products">
+      <section class="section_products" id="products">
         <div class="products">
           <ul class="products_list">
-            <p class="link_location"><a name="products"></a></p>
               <li class="products_list_point_1" onclick="showHide('maintenance'); hide('design'); hide('key_ready')">
                 <img src="./image/aquarium.svg" class="products_list_point_image">
                 <h3 class="products_list_point_name">Обслуживание</h3>     
@@ -118,9 +119,8 @@
           </div>
         </div>
       </section>
-      <section class="broad_description">
+      <section class="broad_description" id="aquariums">
         <div class="broad_description_product_sea">
-          <p class="link_location"><a name="sea"></a></p>
         	<div class="broad_description_product_textbox_1">
             <h2 class="broad_description_product_textbox_name">Морской аквариум</h2>
             <p class="broad_description_product_textbox_text_1">Живой коралловый риф прямо у вас дома. Удивительный подводный город, населенный рыбками самых разных форм и расцветок. Наши морские аквариумы никого не оставят равнодушными!</p>
@@ -133,16 +133,15 @@
           </div>
         </div>
       </section>
-      <section class="apply">
+      <section class="apply" id="apply">
         <h3 class="broad_description_product_textbox_name">Как заказать</h3>
         <div class="div_show_hide_apply">
-          <p class="link_location"><a name="form"></a></p>
           <p>Чтобы заказать у нас изготовление, обслуживание аквариума или уточнить интересующую Вас информацию, свяжитесь с нами</p>
           <ul class="div_show_hide_list">
             <li>по электронной почте <a href="#" class="div_show_hide_link">info@aquaqube.ru</a></li>
             <li>по телефону <a href="#" class="div_show_hide_link">+70000000000</a></li>
             <li>через <a href="#" class="div_show_hide_link">WhatsApp</a> или <a href="#" class="div_show_hide_link">Telegram</a></li>
-            <li>или заполнив <a href="#form" class="div_show_hide_link" onclick="showHide('form')"> форму обратной связи</a></li>
+            <li>или заполнив <a href="#apply" class="div_show_hide_link" onclick="showHide('form')"> форму обратной связи</a></li>
           </ul>
         </div>
         <div class="form" id="form">
@@ -176,7 +175,7 @@
           <div class="footer_line"></div>
           <div class="container_copyright">
             <div class="copyright">
-              <p class="copyright_text">Фотографии 3 и 4 &#169; Copyright, 
+              <p class="copyright_text">Фото 4 и 5 &#169; Copyright, 
                 <a class="link_copyright" href="https://www.facebook.com/sa4nov" title="Николай Сафонов - Facebook"> Николай Сафонов</a>
               </p>
             </div>
