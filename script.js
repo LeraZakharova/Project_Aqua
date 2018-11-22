@@ -6,19 +6,6 @@ $(document).ready(function() {
     $("#phone").mask("+7 (999) 999-9999");
   });
 
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() != 0) {
-			$('#toTop').fadeIn();
-		} else {
-			$('#toTop').fadeOut();
-		}
-	});
-	$('#toTop').click(function() {
-		$('body,html').animate({scrollTop:0},800);
-	});
-});
-
 $(document).ready(function(){
     $("#navigation").on("click","a", function (event) {
         event.preventDefault();
@@ -41,3 +28,12 @@ function hide(element_id){
 		obj.style.display = "none"; //Скрываем элемент
 	}
 }
+
+function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+	if(top > 0) {  
+	  window.scrollBy(0,((top+100)/-10));  
+	  t = setTimeout('up()',10);  
+	} else clearTimeout(t);  
+	return false;  
+} 
