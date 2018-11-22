@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="reset" href="./reset.css">
     <link rel="normalize" href="./normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Rubik&amp;subset=cyrillic" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Rubik:300,400,500,700" rel="stylesheet">    
   </head>
   <body class="body">
     <header class="header">
@@ -107,13 +107,12 @@
           </div>
           <div class="div_show_hide" id="key_ready">
             <h3 class="div_products_list_point_name">Аквариум под ключ</h3>
-            <p>Чтобы поставить аквариум, Вам не придется бегать по разным фирмам в поисках нужного оборудования, рыбок, материалов, а потом искать кого-то, кто все соберет и установит. Мы оказываем полный комплекс услуг по изготовлению аквариума: </p>
+            <p>Чтобы поставить аквариум, Вам не придется бегать по разным фирмам в поисках нужного оборудования, рыбок, материалов и самостоятельно его устанавливать. Мы оказываем полный комплекс услуг по изготовлению аквариума: </p>
             <ul class="div_show_hide_list">
               <li>создание эскиза</li>
               <li>изготовление аквариума</li>
               <li>подбор оборудования</li>
               <li>установка и запуск</li>
-              <li>гарантия на выполненные работы</li>
             </ul>
             <p>Мы обязательно учтем Ваши пожелания, проконсультируем по каждому из пунктов, согласуем план проекта и выполним все работы в установленный срок.</p>
           </div>
@@ -135,20 +134,22 @@
         </div>
       </section>
       <section class="apply">
-        <div id="apply" class="div_show_hide">
+        <h3 class="broad_description_product_textbox_name">Как заказать</h3>
+        <div class="div_show_hide_apply">
           <p class="link_location"><a name="form"></a></p>
-          <h3 class="div_products_list_point_name">Как заказать</h3>
           <p>Чтобы заказать у нас изготовление, обслуживание аквариума или уточнить интересующую Вас информацию, свяжитесь с нами</p>
-          <ul>
-            <li>по электронной почте <a href="#">info@aquaqube.ru</a></li>
-            <li>по телефону <a href="#">+70000000000</a></li>
-            <li>через <a href="#">WhatsApp</a> или <a href="#">Telegram</a></li>
-            <li>или заполнив форму ниже</li>
-          </ul>          
+          <ul class="div_show_hide_list">
+            <li>по электронной почте <a href="#" class="div_show_hide_link">info@aquaqube.ru</a></li>
+            <li>по телефону <a href="#" class="div_show_hide_link">+70000000000</a></li>
+            <li>через <a href="#" class="div_show_hide_link">WhatsApp</a> или <a href="#" class="div_show_hide_link">Telegram</a></li>
+            <li>или заполнив <a href="#form" class="div_show_hide_link" onclick="showHide('form')"> форму обратной связи</a></li>
+          </ul>
         </div>
-        <div class="form">
-        <h2 class="online_form_name">Оставить заявку</h2>
-          <form class="online_form_form" method="post" action="form.php">
+        <div class="form" id="form">
+          <div class="form_close">
+            <img src="./image/close.svg" height="15" class="form_close_image" onclick="showHide('form')">
+          </div>
+          <form class="online_form_form" method="post" onsubmit="showHide('form')">
             <div class="online_form">
               <div class="online_form_data">
                 <input class="online_form_form_placeholder" name="Имя" type="Text" placeholder="Ваше Имя" required>
@@ -157,9 +158,9 @@
               </div>
                 <textarea class="online_form_form_textbox" name="Описание" cols="100" rows="3" placeholder="Введите краткое описание заказа (не обязательно)"></textarea>
             </div>
-            <button class="online_form_form_button" type="submit">Отправить</button>
+            <input class="online_form_form_button" type="submit" value="отправить">
           </form>
-        </div>        
+        </div>    
       </section>
     </main>
     <footer class="class_footer">

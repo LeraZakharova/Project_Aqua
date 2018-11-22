@@ -22,14 +22,14 @@ $(function() {
 
 function showHide(element_id) {
 	var	obj = document.getElementById(element_id);
-	if (obj.style.display != "block") {
-		obj.style.display = "block"; //Показываем элемент
+	if (obj.style.display != "flex") {
+		obj.style.display = "flex"; //Показываем элемент
 	} else obj.style.display = "none"; //Скрываем элемент
 } 
 
 function hide(element_id){
 	var	obj = document.getElementById(element_id);
-	if (obj.style.display = "block") {
+	if (obj.style.display = "flex") {
 		obj.style.display = "none"; //Скрываем элемент
 	}
 }

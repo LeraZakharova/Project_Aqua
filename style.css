@@ -133,7 +133,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background: #a3c9ed;
+	background-color: #70a6cf;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -141,6 +141,9 @@
 	cursor: pointer;
 }
 
+.products_list_point_1:hover  {
+	background-color: #a3c9ed;
+}
 
 .products_list_point_1:hover .products_list_point_div1{
 	display: flex;
@@ -151,7 +154,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background: #a3c9ed;
+	background-color: #70a6cf;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -167,12 +170,16 @@
 	display: flex;
 }
 
+.products_list_point_2:hover  {
+	background-color: #a3c9ed;
+}
+
 .products_list_point_3{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background: #a3c9ed;
+	background-color: #70a6cf;
 	width: 33%;
 	padding: 1%;
 	height: 350px;
@@ -180,6 +187,9 @@
 	cursor: pointer;
 }
 
+.products_list_point_3:hover  {
+	background-color: #a3c9ed;
+}
 
 .products_list_point_3:hover .products_list_point_div3{
 	display: flex;
@@ -187,7 +197,7 @@
 
 .products_list_point_name{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-variant: all-petite-caps;
 	font-size: 35px;
 	text-align: center;
@@ -224,6 +234,7 @@
 
 .products_list_point_text{
 	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
 	font-size: 18px;
 	text-align: center;
 	margin: 0;
@@ -236,23 +247,28 @@
 	background-color: #04030F;
 	color: #FFFFFF;
 	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
 	font-size: 18px;
-	text-align: left;
-	padding: 50px;
+	text-align: center;
+	padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .div_products_list_point_name {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-variant: all-petite-caps;
 	font-size: 30px;
 	text-align: center;
 	margin: 0;
 	position: relative;
+	color: #FFFFFF;
 }
 
 .div_show_hide_list{
-	list-style-type: circle;
+	display: contents;
 	list-style-position: inside;
 }
 
@@ -348,40 +364,106 @@
 	font-variant: all-petite-caps;
 	margin: 0;
 	font-size: 35px;
+	color: #FFFFFF;
+	position: relative;
 }
 
 .broad_description_product_textbox_text_1{
 	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
 	margin: 0;
 	width: 90%;
 	padding-top: 20px;
-	font-style: 16px;
+	font-size: 18px;
 	display: none;
 }
 
 .broad_description_product_textbox_text_2{
 	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
 	margin: 0;
 	width: 90%;
 	padding-top: 20px;
-	font-style: 16px;
+	font-size: 18px;
 	display: none;
 }
 
 .apply{
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-}
-
-.form{
-	height: 500px;
+	align-items: center;
+	height: 400px;
 	background-image: url(./image/Stars.jpg);
 	background-size: cover;
 	background-position-y: center;
+}
+
+.apply::before{
+	content: '';
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	height: 400px;
 	width: 100%;
-	display: flex;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.apply:hover::before{
+	opacity: 1;
+}
+
+.apply:hover .div_show_hide_apply{
+	display: block;
+}
+
+.div_show_hide_apply{
+	display: none;
 	flex-direction: column;
+	justify-content: center;
+	position: relative;
 	align-items: center;
-	justify-content: space-around;
+	color: #FFFFFF;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.div_show_hide_link{
+	color: #FFFFFF;
+}
+
+.div_show_hide_link:hover {
+	color: #a3c9ed;
+}
+
+.form{
+	position: fixed;
+    bottom: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(4,3,15,0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.form_close{
+	width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form_close_image{
+	cursor: pointer;
 }
 
 .online_form_name{
@@ -404,7 +486,6 @@
 	justify-content: space-evenly;
 	flex-direction: column;
 	margin: 0;
-	padding-bottom: 40px;
 }
 
 .online_form_data{
@@ -423,6 +504,7 @@
 	border-radius: 3px;
 	padding: 10px;
 	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
 	font-size: 14px;
 	width: 180px;
 	border: 0px;
@@ -432,6 +514,7 @@
 	border-radius: 3px;
 	border:none;
 	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
 	padding: 10px;
 	font-size: 14px;
 	width: 300px;
@@ -442,11 +525,12 @@
 	padding: 10px;
 	width: 500px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 14px;
-	background-color: #CCDDFF;
+	background-color: #70a6cf;
 	font-variant: all-petite-caps;
 	border: 0px;
+	cursor: pointer;
 }
 
 .class_footer{
@@ -476,12 +560,11 @@
 	margin: 0;
 }
 
-
 .container_contacts_link{
 	color: #F8F6EA;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-variant: all-petite-caps;
 	font-size: 18px;
 	opacity: 1;
@@ -490,7 +573,7 @@
 .footer_line{
 	height: 1px;
 	width: 200px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(245,255,255,0.5);
 }
 
 .container_copyright{
@@ -504,7 +587,7 @@
 	color: #F8F6EA;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-variant: all-petite-caps;
 	font-size: 12px;
 	opacity: 1;
@@ -530,7 +613,13 @@
 	align-items: center;
 	bottom: 20px;
 	right: 20px;
+}
 
+@media all and (max-width: 1125px){
+	.form{
+		width: 60%;
+		left: 20%;
+	}
 }
 
 @media all and (max-width: 1025px){
@@ -573,7 +662,13 @@
 	.broad_description_product_textbox_text_2{
 		text-align: right;
 	}
+}
 
+@media all and (max-width: 950px){
+	.form{
+		width: 72%;
+		left: 14%;
+	}
 }
 
 @media all and (max-width: 750px){
@@ -602,24 +697,12 @@
 		display: none;
 	}
 
-	.products_list_point_1:hover  {
-		background-color: #70a6cf;
-	}
-
 	.products_list_point_2:hover .products_list_point_div2{
 	display: none;
 	}
 
-	.products_list_point_2:hover  {
-		background-color: #70a6cf;
-	}
-
 	.products_list_point_3:hover .products_list_point_div3{
 	display: none;
-	}
-
-	.products_list_point_3:hover  {
-		background-color: #70a6cf;
 	}
 
 	.broad_description_product_textbox_text_1{
@@ -628,6 +711,11 @@
 
 	.broad_description_product_textbox_text_2{
 		text-align: right;
+	}
+
+	.form{
+		width: 90%;
+		left: 5%;
 	}
 }
 
@@ -649,6 +737,10 @@
 		font-size: 18px;
 	}
 
+	.products_list_point_image{
+		height: 60px;
+	}
+
 	.products_list_point_1{
 		height: 150px;
 	}
@@ -662,6 +754,10 @@
 	}
 
 	.div_show_hide{
+		font-size: 16px;
+	}
+
+	.div_show_hide_apply{
 		font-size: 16px;
 	}
 
@@ -679,29 +775,12 @@
 
 	.broad_description_product_textbox_text_1{
 		text-align: center;
+		font-size: 16px;
 	}
 
 	.broad_description_product_textbox_text_2{
 		text-align: center;
-	}
-
-	.header_top_line{
-		height: 100px;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-around;
-	}
-
-	.header_top_phone{
-		padding-left: 5%;
-	}
-
-	.header_top_email{
-		padding-left: 5%;
-	}
-
-	.div_social_networks{
-		padding-left: 5%;
+		font-size: 16px;
 	}
 
 	.header_container{
@@ -742,32 +821,36 @@
 
 	.form{
 		justify-content: center;
+		width: 60%;
+		left: 20%;
+		height: 70%;
+		bottom: 15%;
+	}
+
+	.form_close{
+		width: 180px;
+	}
+
+	.container_contacts_link{
+		font-size: 16px;
 	}
 }
 
-@media all and (max-width: 520px){
+@media all and (max-width: 530px){
 	.products_list_point_1{
-		height: 130px;
+		height: 50px;
 	}
 
 	.products_list_point_2{
-		height: 130px;
+		height: 50px;
 	}
 
 	.products_list_point_3{
-		height: 130px;
+		height: 50px;
 	}
 
 	.products_list_point_image{
-		height: 65px;
-	}
-
-	.products_list_point_name{
-		font-size: 16px;
-	}
-
-	.div_show_hide{
-		font-size: 14px;
+		display: none;
 	}
 
 	.div_products_list_point_name{
@@ -777,19 +860,12 @@
 }
 
 @media all and (max-width: 400px){
-	.products_list_point_image{
-		height: 60px;
+	.products_list_point_name{
+		font-size: 16px;
 	}
 
-	.products_list_point_1{
-		height: 100px;
-	}
-
-	.products_list_point_2{
-		height: 100px;
-	}
-
-	.products_list_point_3{
-		height: 100px;
+	.form{
+		width: 80%;
+		left: 10%;
 	}
 }
