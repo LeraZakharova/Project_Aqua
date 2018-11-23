@@ -36,6 +36,10 @@
 	padding: 0;
 }
 
+.header_top_img{
+	height: 20px;
+}
+
 .main_image{
 	display: flex;
 	flex-direction: column;
@@ -115,6 +119,7 @@
 	justify-content: center;
 	background-image: url(./image/Star.jpeg);
 	background-size: cover;
+	background-position-x: right; 
 }
 
 .link_location{
@@ -610,7 +615,7 @@
 
 .toTop{
 	position: fixed;
-    bottom: -90px;
+    bottom: -80px;
     padding: 0px;
     z-index:99991;
     cursor: pointer;
@@ -633,13 +638,14 @@
 	font-weight: 300;
 	font-variant: all-petite-caps;
 	font-size: 16px;
-	padding-top: 3px;
+	padding-top: 7px;
 	color: #FFFFFF;
 }
 
 .toTop_link:hover{
 	height: 100px;
 	width: 100px;
+	font-size: 18px;
 	border-radius: 50px;
 	padding-top: 15px;
     -webkit-transition: all linear 0.2s; 
@@ -992,6 +998,18 @@
 	.form{
 		width: 80%;
 		left: 10%;
+	}
+
+	.header_top_img{
+		height: 15px;
+	}
+
+	.social_networks{
+		width: 60px;
+	}
+
+	.container_contacts_link{
+		font-size: 14px;
 	}
 }
 
