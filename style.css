@@ -1146,3 +1146,70 @@
 		padding: 7px;
 	}
 }
+
+@media all and (max-height: 280px){
+	.form{
+		width: 70%;
+		left: 15%;
+		height: 40px;
+		bottom: 50%;
+	}
+
+	.online_form_form{
+		width: 490px;
+		height: 28px;
+		flex-direction: row;
+	}
+
+	.online_form{
+		width: 415px;
+		height: 28px;
+	}
+
+	.online_form_data{
+		width: 310px;
+		height: 28px;
+		flex-direction: row;
+	}
+
+	.online_form_form_placeholder{
+		width: 100px;
+		font-size: 12px;
+		padding: 7px;
+	}
+
+	.online_form_form_textbox{
+		font-size: 12px;
+		height: 28px;
+		width: 100px;
+	}
+
+	.online_form_form_button{
+		width: 70px;
+		height: 28px;
+		font-size: 12px;
+		padding: 7px;
+	}
+}
+
+@media all and (max-width: 740px) and (max-height: 280px){
+	.form{
+		width: 90%;
+		left: 5%;
+	}
+}
+
+@media all and (max-height: 130px){
+	.form{
+		bottom: 10%;
+	}
+
+	.form_close{
+		top: 10px;
+		right: -25px;
+	}
+
+	.toTop{
+		display: none;
+	}
+}
