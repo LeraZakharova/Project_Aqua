@@ -29,6 +29,15 @@ function hide(element_id){
 	}
 }
 
+$(document).scroll( function() {
+	if ( $(document).scrollTop() > 0 ) {
+		$('#toTop').fadeIn();
+		}
+	else {
+		$('#toTop').fadeOut();
+	}
+});
+
 function up() {  
   var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
 	if(top > 0) {  

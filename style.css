@@ -562,13 +562,14 @@
 }
 
 .class_footer{
-	height: 150px;
+	height: 170px;
 	background-color: #04030F;
 	display: flex;
 	justify-content: center;
 }
 
 .container{
+	padding-bottom: 20px;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -636,6 +637,7 @@
     padding: 0px;
     z-index:99991;
     cursor: pointer;
+    display: none;
 }
 
 .toTop_link{
